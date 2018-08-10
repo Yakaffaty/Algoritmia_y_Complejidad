@@ -91,5 +91,73 @@ namespace MergeSort
 ```
 
 # Problema 2
+``` c#
+using System;
+using System.Collections.Generic;
+using System.Linq; 
+using System.Diagnostics;
+namespace Heap
+{
+    class HeapTry
+    {
+        private static bool HeapIntent(int[] Arr, int i, int n)
+        {
+            if(i > (n-2)/2)
+            {
+                return true;
+            }
 
+            if (Arr[i] >= Arr[2 * i + 1] && Arr[i] >= Arr[2 * i + 2] && HeapIntent(Arr, 2 * i + 1, n) && HeapIntent(Arr, 2 * i + 2, n))
+            {
+                return true;
+            }
+
+            return false; 
+ 
+
+
+        }
+
+   
+
+
+        static void Main(string[] args)
+        {
+            int[] heap = { 16, 14, 10, 8, 7, 9, 3, 2, 4, 1 };
+            int n = heap.Length / 4;
+
+            if(HeapIntent(heap,0,n)== true)
+            {
+                Console.WriteLine("Si es un heap");
+            } else
+            {
+                Console.WriteLine("No es un heap");
+            }
+
+        }
+
+
+    }
+}
+```
+Este caso corre en O(n)
 # Problema 3 
+```
+while ( i < = heapsize) {
+ iz <- izquierda(i)
+ der <- derecha(i)
+ if (iz<=heapsize) and (A[iz]>A[i])
+  mayor <- iz
+ else
+  mayor <- i 
+ if (der<=heapsize) and (A[der]>A[mayor])
+  mayor <- der
+ if (mayor!= i)
+ {
+   exchange A[i] <-> A[mayor]
+   i <- mayor
+ } 
+ else
+  break
+}
+```
