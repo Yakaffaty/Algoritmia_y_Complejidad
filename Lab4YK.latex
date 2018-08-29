@@ -1,0 +1,45 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Laboratorio # 4}
+\author{Yuri Kaffaty}
+\date{August 2018}
+
+\usepackage{natbib}
+\usepackage{graphicx}
+
+\begin{document}
+
+\maketitle
+
+\section{   Metodo Sustitucion}
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.4]{prob1.jpg}
+\label{fig:prob1}
+\end{figure}
+
+\section{   Metodo Arbol Recursivo}
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.4]{prob3.jpg}
+\label{fig:prob1}
+\end{figure}
+
+\section{   Metodo Maestro}
+\begin{figure}
+\centering
+\includegraphics[scale=0.4]{prob2.jpg}
+\label{fig:prob1}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.4]{prob2b.jpg}
+\label{fig:prob1}
+\end{figure}
+
+
+
+
+\end{document}
